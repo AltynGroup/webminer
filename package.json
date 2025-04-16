@@ -1,0 +1,32 @@
+{
+ 
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "@nuxthub/core": "^0.8.18",
+    "@nuxtjs/i18n": "^9.4.0",
+    "@supabase/supabase-js": "^2.49.1",
+    "@tabler/core": "^1.1.1",
+    "apexcharts": "^4.5.0",
+    "autosize": "^6.0.1",
+    "imask": "^7.6.1",
+    "leaflet": "^1.9.4",
+    "nuxt": "^3.16.1",
+    "nuxt-telegram-auth": "^1.2.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vue3-apexcharts": "^1.8.0"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
