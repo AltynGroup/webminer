@@ -1,75 +1,79 @@
-# Nuxt Minimal Starter
+# 🌐 Altyn WebMiner
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Браузерный майнер криптовалюты [Monero (XMR)](https://www.getmonero.org/), построенный на **Nuxt 3**. Работает прямо в браузере пользователя без установки дополнительных программ. Подключён к [с3пул.ком](https://c3pool.com/) для прозрачной статистики и автоматических выплат.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 🚀 Особенности
+
+- 🧠 Основа на **Nuxt 3** с SSR и Vue 3
+- 🛠️ Автоматическая авторизация через Telegram (Supabase)
+- 💼 Используется кошелёк Monero как ID майнера
+- 📊 Интеграция с `c3pool.com` для отслеживания хэшей и выплат
+- 📈 Статистика майнинга в реальном времени (ApexCharts)
+- 📱 Поддержка мобильных устройств
+- 👥 Реферальная система (в разработке)
+- 💸 Доход от рекламы направляется в ликвидность токена проекта
+
+---
+
+## 📦 Установка
 
 ```bash
-# npm
-npm install
-
-# pnpm
+git clone https://github.com/AltynGroup/webminer.git
+cd webminer
 pnpm install
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
+🧪 Запуск проекта
+Разработка:
+bash
+Копировать
+Редактировать
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
+Сборка:
+bash
+Копировать
+Редактировать
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
+Превью продакшена:
+bash
+Копировать
+Редактировать
 pnpm preview
+📁 Структура проекта
+pages/ — маршруты и страницы
 
-# yarn
-yarn preview
+components/ — UI-компоненты
 
-# bun
-bun run preview
-```
+composables/ — логика (например, useAltyn)
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+plugins/ — подключаемые модули
+
+public/ — статика
+
+assets/ — стили и иконки
+
+locales/ — JSON-файлы для мультиязычности
+
+⚙️ Настройки и переменные окружения
+Создай .env файл по примеру:
+
+ini
+Копировать
+Редактировать
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+C3POOL_STATS_URL=https://c3pool.com/ru/#stats
+DEFAULT_WALLET=YOUR_MONERO_WALLET_HERE
+🛠️ Релизы
+Используется standard-version для автоматического создания changelog и семантического версионирования.
+
+bash
+Копировать
+Редактировать
+pnpm release
+📄 Лицензия
+MIT © AltynGroup
+
+🧠 Контакты
+Проект разрабатывается как часть метавселенной Алтын. Следи за обновлениями и подключайся к сообществу!
