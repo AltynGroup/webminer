@@ -3,42 +3,118 @@ import { useUserSession } from '#imports'
 const { session, clearSession } = useUserSession()
 const router = useRouter()
 
+/*
+//проверка на авторизованность
+
 watchEffect(() => {
   if (session.value) {
     router.push('/')
   }
 })
 
+*/
+
+
 const wallet = ref('')
 </script>
 
 <template>
-  <div class="container py-5">
-    <div class="card shadow-sm p-4 max-w-xl mx-auto">
-      <h1 class="text-2xl font-bold mb-4">Настройки профиля</h1>
 
-      <div v-if="session" class="space-y-4">
-        <div class="flex items-center space-x-4">
-          <img :src="session.photo_url" alt="avatar" class="w-16 h-16 rounded-full" />
-          <div>
-            <div class="font-semibold">{{ session.id }}</div>
-            <div class="text-sm text-gray-500">@{{ session.username }}</div>
-            <div class="text-xs text-gray-400">ID: {{ session.id }}</div>
+<div class="page-body">
+          <div class="container-xl">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-12 col-md-3 border-end">
+                  <div class="card-body">
+                    <h4 class="subheader">Business settings</h4>
+                    <div class="list-group list-group-transparent">
+                      <a href="./settings.html" class="list-group-item list-group-item-action d-flex align-items-center active">My Account</a>
+                      <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">My Miner</a>
+                      <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">My Wallet</a>
+                      <a href="./settings-plan.html" class="list-group-item list-group-item-action d-flex align-items-center">Matrix</a>
+                      <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">Staking</a>
+                    </div>
+                    <h4 class="subheader mt-4">Experience</h4>
+                    <div class="list-group list-group-transparent">
+                      <a href="#" class="list-group-item list-group-item-action">Give Feedback</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-9 d-flex flex-column">
+                  <div class="card-body">
+                    <h2 class="mb-4">My Account</h2>
+                    <h3 class="card-title">Profile Details</h3>
+                    <div class="row align-items-center">
+                      <div class="col-auto"><span class="avatar avatar-xl" style="background-image: url(./static/avatars/000m.jpg)"> </span></div>
+                      <div class="col-auto">
+                        <a href="#" class="btn btn-1"> Change avatar </a>
+                      </div>
+                      <div class="col-auto">
+                        <a href="#" class="btn btn-ghost-danger btn-3"> Delete avatar </a>
+                      </div>
+                    </div>
+                    <h3 class="card-title mt-4">Business Profile</h3>
+                    <div class="row g-3">
+                      <div class="col-md">
+                        <div class="form-label">Business Name</div>
+                        <input type="text" class="form-control" value="Tabler">
+                      </div>
+                      <div class="col-md">
+                        <div class="form-label">Business ID</div>
+                        <input type="text" class="form-control" value="560afc32">
+                      </div>
+                      <div class="col-md">
+                        <div class="form-label">Location</div>
+                        <input type="text" class="form-control" value="Peimei, China">
+                      </div>
+                    </div>
+                    <h3 class="card-title mt-4">Email</h3>
+                    <p class="card-subtitle">This contact will be shown to others publicly, so choose it carefully.</p>
+                    <div>
+                      <div class="row g-2">
+                        <div class="col-auto">
+                          <input type="text" class="form-control w-auto" value="paweluna@howstuffworks.com">
+                        </div>
+                        <div class="col-auto">
+                          <a href="#" class="btn btn-1"> Change </a>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="card-title mt-4">Password</h3>
+                    <p class="card-subtitle">You can set a permanent password if you don't want to use temporary login codes.</p>
+                    <div>
+                      <a href="#" class="btn btn-1"> Set new password </a>
+                    </div>
+                    <h3 class="card-title mt-4">Public profile</h3>
+                    <p class="card-subtitle">Making your profile public means that anyone on the Dashkit network will be able to find you.</p>
+                    <div>
+                      <label class="form-check form-switch form-switch-lg">
+                        <input class="form-check-input" type="checkbox">
+                        <span class="form-check-label form-check-label-on">You're currently visible</span>
+                        <span class="form-check-label form-check-label-off">You're currently invisible</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-transparent mt-auto">
+                    <div class="btn-list justify-content-end">
+                      <a href="#" class="btn btn-1"> Cancel </a>
+                      <a href="#" class="btn btn-primary btn-2"> Submit </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div>
-          <label class="block text-sm font-medium mb-1">Monero-кошелёк</label>
-          <input v-model="wallet" type="text" placeholder="48...abc" class="input w-full" />
-        </div>
-
-        <button class="btn btn-primary" @click="saveSettings">Сохранить</button>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script lang="ts">
+definePageMeta({
+  layout: 'profile' // название вашего layout-файла
+});
+
+
 function saveSettings() {
   // Здесь можно сохранить в Supabase или отправить на API
   alert('Сохранили Monero-кошелёк: ' + wallet.value)

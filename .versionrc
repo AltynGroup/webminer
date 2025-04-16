@@ -1,0 +1,15 @@
+{
+  "header": "# 📦 История изменений\n\n",
+  "types": [
+    { "type": "feat", "section": "🚀 Новые фичи" },
+    { "type": "fix", "section": "🐞 Исправления" },
+    { "type": "chore", "section": "🧹 Поддержка" },
+    { "type": "docs", "section": "📝 Документация" },
+    { "type": "refactor", "section": "🔧 Рефакторинг" },
+    { "type": "perf", "section": "⚡ Производительность" },
+    { "type": "test", "section": "✅ Тесты" }
+  ],
+   "skip": {
+    "tag": true // 👈 отключаем git-теги
+  }
+}
