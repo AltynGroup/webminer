@@ -5,6 +5,11 @@
 <header class="navbar navbar-expand-md d-print-none">
   <div class="container-xl">
           <a href="/" class="navbar-brand">AltynWebMiner</a>
+           <div v-if="session.loggedIn">
+
+            <MenuProfile/>
+
+          </div>
   </div>
 </header>
 
@@ -19,13 +24,13 @@
 		<div class="row g-2 align-items-center">
 			<div class="col">
 				<!-- Page pre-title -->
-				<h2 class="page-title">Frequently Asked Questions</h2>
+				<h2 class="page-title">Profile settings</h2>
 			</div>
 <div class="col-auto ms-auto d-print-none">
                 <div class="d-flex">
                   <ol class="breadcrumb breadcrumb-arrows" aria-label="breadcrumbs">
                     <li class="breadcrumb-item"><a href="#">{{ $t('home') }}</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">{{ $t('faq') }}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">{{ $t('settings') }}</a></li>
                   </ol>
                 </div>
               </div>
@@ -54,5 +59,6 @@
 </template>
 
 <script setup>
-useHead({ title: "FAQ" });
+useHead({ title: "Profile" });
+const { clearSession, session } = useUserSession();
 </script>

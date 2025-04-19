@@ -21,14 +21,14 @@
 </div>
 
 <div v-else>
-        <TelegramLoginWidget telegram-login="tokenrebate_bot"/>
+        <TelegramLoginWidget telegram-login="Microfrilancerbot"/>
       </div>
     
 
 
 </div>
 
-
+ 
 
 				</div>
 		</div>

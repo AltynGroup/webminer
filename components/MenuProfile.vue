@@ -15,6 +15,7 @@
                 </div>
               </a>
               <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <NuxtLink to="/profile" class="dropdown-item">Profile</NuxtLink>
                 <div class="dropdown-divider"></div>
                 <NuxtLink @click="logout" to="/" class="dropdown-item">Logout</NuxtLink>
               </div>

@@ -3,6 +3,7 @@
   "description": "This is a multilingual Nuxt 3 app.",
   "home": "Home",
   "faq": "FAQ",
+  "settings": "Settings",
   "faqfull": "Frequently Asked Questions.",
   "profile": "Profile",
   "profilesettings": "Profile settings",

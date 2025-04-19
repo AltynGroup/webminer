@@ -6,7 +6,10 @@ export default defineNuxtConfig({
       meta: [
         { name: "yandex-verification", content: "7aa88133122bb8a4" },
         { name: "monetag", content: "e2d78787a1deac938fa851c3d0fc0549" },
-        { name: "182e57a821c89320a8d7e5324b0869eb7ec8b532", content: "182e57a821c89320a8d7e5324b0869eb7ec8b532"}
+        { name: "182e57a821c89320a8d7e5324b0869eb7ec8b532", content: "182e57a821c89320a8d7e5324b0869eb7ec8b532"},
+
+    
+
       ],
 
 

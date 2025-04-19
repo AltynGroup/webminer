@@ -20,7 +20,7 @@ const wallet = ref(null);
 
 const fetchData = async () => {
   const { data, error } = await supabase
-    .from('users')
+    .from('settings')
     .select('id, wallet')
     .eq('id', id)
     .single();

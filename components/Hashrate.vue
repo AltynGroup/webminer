@@ -34,7 +34,7 @@ const loadWallet = () => {
 
 onMounted(loadWallet);
 
-
+/*
 
 useHead({
   script: [
@@ -45,7 +45,7 @@ useHead({
   ]
 });
 
-
+*/
 
  
 import ApexChart from "vue3-apexcharts";
