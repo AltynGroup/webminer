@@ -75,7 +75,7 @@ export default function App() {
       <div className="min-h-screen bg-[#1A1A1A] text-white font-mono overflow-hidden">
         {/* Navigation */}
         <nav className="p-8 flex justify-between items-center border-b border-white/5">
-          <div className="text-xl tracking-[0.3em] font-bold">CHRONOS</div>
+          <div className="text-xl tracking-[0.3em] font-bold">ALTYNZ</div>
           <div className="hidden md:flex gap-12 text-[10px] tracking-widest opacity-40 uppercase">
             <a href="#" className="hover:opacity-100 transition-opacity">Protocol</a>
             <a href="#" className="hover:opacity-100 transition-opacity">Security</a>
@@ -98,8 +98,8 @@ export default function App() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter mb-8">
-                TIME IS <br />
-                <span className="opacity-50">THE ASSET</span>
+                PROFIT OUR <br />
+                <span className="opacity-50">PASSION</span>
               </h1>
               <p className="max-w-md text-sm opacity-40 leading-relaxed tracking-wide">
                 Chronos is a minimalist, time-centric financial protocol designed for the next era of decentralized assets. Precision meets performance.
@@ -167,7 +167,7 @@ export default function App() {
 
         {/* Footer */}
         <footer className="p-8 text-[8px] opacity-20 tracking-[0.5em] uppercase flex justify-between items-center">
-          <div>© 2026 Chronos Systems</div>
+          <div>© 2015- 2026 We are AltynGroup</div>
           <div className="flex gap-8">
             <a href="#">Terms</a>
             <a href="#">Privacy</a>
