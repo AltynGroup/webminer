@@ -1,6 +1,6 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+
+[![wakatime](https://wakatime.com/badge/user/9405eb83-d5d8-490c-ace0-312af51eb91b/project/dc4300af-4db4-487b-b4c2-419d9a7ac078.svg)](https://wakatime.com/badge/user/9405eb83-d5d8-490c-ace0-312af51eb91b/project/dc4300af-4db4-487b-b4c2-419d9a7ac078)
+
 
 # Run and deploy your AI Studio app
 
